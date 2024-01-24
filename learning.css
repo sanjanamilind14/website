@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body
+{
+    background-color: #FAF8F1;
+	background-image: url(img/doodle.png);
+	background-repeat: repeat-x;
+}
+.top-bar
+{
+    height: 180px;
+    width: 100%;
+    top: 0px;
+}
+.top-bar .logo
+{
+    padding: 20px;
+    margin-top: -90px;
+}
+.top-bar .menu
+{
+   position: absolute;
+   right: 20px;
+   top: 45px;
+}
+.top-bar .menu a
+{
+    color: black;
+    font-size: 30px;
+}
+.overlay
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100vh;
+    background-color: #EAFDFC;
+    overflow-x: hidden;
+    z-index: 5;
+    transition: 0.5s all;
+
+}
+.overlay_content
+{
+    position: relative;
+    top: 22%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a
+{
+    padding: 10px;
+    color: #000;
+    font-size: 40px;
+    text-decoration: none;
+    display: block;
+}
+.overlay a:hover
+{
+    color: #7D0633;
+}
+.overlay .closeBtn
+{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 80px;
+
+}
+.container{
+    position:relative;
+    min-height: 100vh;
+}
+.container h1{
+    text-align: center;
+    padding:15px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 70px;
+
+}
+.container .video-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+    padding:10px;
+    margin-top: 50px;
+}
+.container .video-container .video{
+    height:250px;
+    width:350px;
+    border:10px solid #fff;
+    cursor:pointer;
+    overflow: hidden;
+}
+.container .video-container .video video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    transition: 2s linear;
+
+}
+.container .video-container .video:hover video{
+    transform: scale(1.1);
+}
+.container .popup-video{
+    position: fixed;
+    top:0; left:0;
+    z-index:100;
+    background: #b8e7f0da;
+    height: 100%;
+    width:100%;
+    display: none;
+}
+.container .popup-video video{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 750px;
+    border-radius:5px;
+    border:3px solid rgb(252, 253, 253);
+    object-fit: cover;
+}
+.container .popup-video span{
+    position: absolute;
+    top: 5px; right: 20px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}
+h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    text-align: center;
+}
+@media (max-width:768px){
+    .container .popup-video video{
+        width: 95%;
+    }
+    h1
+    {
+        margin-top: 80px;
+    }
+}

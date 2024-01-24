@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+body
+{
+    background-color: #FAF8F1;
+}
+.top-bar
+{
+    height: 180px;
+    width: 100%;
+    top: 0px;
+}
+.top-bar .logo
+{
+    padding: 20px;
+    margin-top: -90px;
+}
+.top-bar .menu
+{
+   position: absolute;
+   right: 20px;
+   top: 45px;
+}
+.top-bar .menu a
+{
+    color: black;
+    font-size: 30px;
+}
+.overlay
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100vh;
+    background-color: #EAFDFC;
+    overflow-x: hidden;
+    z-index: 5;
+    transition: 0.5s all;
+
+}
+.overlay_content
+{
+    position: relative;
+    top: 22%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a
+{
+    padding: 10px;
+    color: #000;
+    font-size: 40px;
+    text-decoration: none;
+    display: block;
+}
+.overlay a:hover
+{
+    color: #7D0633;
+}
+.overlay .closeBtn
+{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 80px;
+
+}
+
+.about {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/doodle.png);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.about .main img {
+    width: 500px;
+    height: 80px;
+    height: auto;
+    padding: 0 10px;
+    margin-top: 470px;
+}
+
+.all-text {
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+    margin-top: 200px;
+}
+
+.main {
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.all-text h2
+{
+    margin-top: 350px;
+    font-size: 40px;
+}
+.all-text p {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 35px;
+    font-family: 'Righteous', cursive;
+    text-align: justify;
+}
+
+.btn button {
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: #f28f92;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    border: none;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+.btn button a
+{
+    text-decoration: none;
+}
+
+.btn button:hover {
+    background-color:  #62B6B7;
+    box-shadow: 30px 10px 50px #7ddfe0c4;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+.btn .btn2 {
+    background-color: #;
+    color: #fff;
+}
+h2
+{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+@media screen and (max-width: 1250px) {
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 60px 0;
+        background-repeat: no-repeat;
+    }
+
+    .all-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about
+    {
+        background-repeat: no-repeat;
+    }
+    .about .main img {
+        margin-bottom: 35px;
+        margin-top: 180px;
+    }
+
+    .all-text h2 {
+        font-size: 45px;
+        margin-bottom: 30px;
+        margin-top: -50px;
+    }
+}

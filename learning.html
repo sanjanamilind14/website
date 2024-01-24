@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARNING</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="learning.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <section class="top-bar">
+        <div class="logo">
+         <a href="#"><img src="img\97f981682ae9b99a8c75670968c64567-removebg-preview.png" alt="" height="300px" width="180px"></a>
+        </div>
+        <div class="menu">
+         <a href="#" class="openbtn" onclick="openNav()">
+             <i class="fa-solid fa-bars"></i>
+         </a>
+        </div>
+      </section>
+      <section class="overlay" id="nav">
+       <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
+       <div class="overlay_content">
+       <a href="index.html"> HOME</a>
+       <a href="gallery.html"> GALLERY</a>
+       <a href="learning.html"> LEARNING</a>
+       <a href="about.html"> PROFILE</a>
+       </div>
+      </section>
+    <!-- MAIN -->
+    <div class="container" >
+        <h1 > LETS WATCH A TUTORIAL </h1>
+        <div class = "video-container" >
+            <div class="video">
+                <video src = "img\_artspoon_-video-B0gNxd5B51w.mp4" muted></video>
+            </div>
+            <div class="video"> 
+                <video src="img\_artspoon_-video-B1l95Z0BWFR.mp4" muted></video>
+            </div>
+            <div class="video"> 
+                <video src="img\_artspoon_-video-B0gNxd5B51w.mp4" muted></video>
+            </div>
+            <div class="popup-video">
+                <span>&times;
+                </span>
+                <video src="img\_artspoon_-video-B0gNxd5B51w.mp4" muted autoplay controls></video>
+            </div>
+            
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

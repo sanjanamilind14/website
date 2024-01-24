@@ -1,0 +1,100 @@
+body
+{
+    background-color: #FAF8F1;
+	background-image: url(img/doodle.png);
+	background-repeat: repeat-x;
+}
+.top-bar
+{
+    height: 180px;
+    width: 100%;
+    top: 0px;
+
+}
+.top-bar .logo
+{
+    padding: 20px;
+    margin-top: -90px;
+}
+.top-bar .menu
+{
+   position: absolute;
+   right: 20px;
+   top: 45px;
+}
+.top-bar .menu a
+{
+    color: black;
+    font-size: 30px;
+}
+.overlay
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100vh;
+    background-color: #EAFDFC;
+    overflow-x: hidden;
+    z-index: 5;
+    transition: 0.5s all;
+
+}
+.overlay_content
+{
+    position: relative;
+    top: 22%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a
+{
+    padding: 10px;
+    color: #000;
+    font-size: 40px;
+    text-decoration: none;
+    display: block;
+}
+.overlay a:hover
+{
+    color: #7D0633;
+}
+.overlay .closeBtn
+{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 80px;
+
+}
+img{
+	max-width: 100%;
+}
+.gallery{
+	padding: 80px 0;
+}
+.gallery img{
+	background-color: #ffffff;
+	padding: 15px;
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+#gallery-modal .modal-img{
+	width: 100%;
+}
+h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    margin-top: -50px;
+    text-align: center;
+    font-weight: bold;
+}
+@media (max-width:768px){
+    h1
+    {
+        margin-top: 20px;
+    }
+}
